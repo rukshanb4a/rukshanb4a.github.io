@@ -7,12 +7,33 @@
 	<title>My First page</title>
 	<link rel="style sheet" href="style.css">
 
-<nav>
-    <ul>
-        <li><a href="#Who are we ">Who are we </a></li>
-        <li><a href="#What's next">What's next</a></li>
-        <li><a href="#Memories">Memories</a></li>
-    </ul>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#ladderPage" onclick="showTab('#ladderPage')">චෙස්<span
+                    class="glyphicon glyphicon-knight" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-king admin-only" aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a class="nav-link hidden-sm hidden-xs" href="#Who are we" onclick="showTab('#About')">Ladder</a></li>
+                <li><a class="nav-link" href="#history" onclick="showTab('#history')">History</a></li>
+                <li><a class="nav-link" href="#events" onclick="showTab('#events')">Tournaments</a></li>
+
+                </li>
+                <li><a class="nav-link hidden-sm hidden-xs" href="#aboutTab" onclick="showTab('#aboutTab')">About</a></li>
+                <li><a class="nav-link hidden-md hidden-sm hidden-xs" href="#contactTab" onclick="showTab('#contactTab')">Contact</a></li>
+            </ul>
+        </div><!--/.nav-collapse --> 
+    </div>
 </nav>
 </head>
 <body>
