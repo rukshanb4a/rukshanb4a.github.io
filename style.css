@@ -1,0 +1,16 @@
+﻿body {
+        background-color:lightcyan;
+        font-family: 'Gill Sans';
+        font-size: larger;
+        font-weight: normal;
+        letter-spacing: normal;
+        text-transform: none;
+        word-spacing: normal;
+       
+}
+h1{
+    color:crimson;
+    font-family: 'Century Gothic';
+    align-content:center;
+    font-size: xx-large;
+}
